@@ -1,8 +1,8 @@
 import {Sequelize} from 'sequelize-typescript';
-import { config } from './config/config';
+import { config } from './config/config_env';
 
 
-const c = config.dev;
+const c = config.postgres;
 
 // Instantiate new Sequelize instance!
 export const sequelize = new Sequelize({
